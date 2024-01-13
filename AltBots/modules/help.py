@@ -14,8 +14,8 @@ HELP_BUTTON = [
       Button.inline("💘 𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚂 💘", data="extra")
     ],
     [
-      Button.url("🍁 𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚁 🍁", "https://t.me/moon_m_6"),
-      Button.url("💖 s𝚞𝚙𝚙𝚘𝚛𝚃 💖", "https://t.me/+PfRardqZ41U1MTg1")
+      Button.url(""🌷♨️𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑♨️🌷", "https://t.me/moon_m_6"),
+      Button.url("🌷♨️𝐒𝐔𝐏𝐏𝐎𝐑𝐓♨️🌷", "https://t.me/+PfRardqZ41U1MTg1")
     ]
   ]
 
@@ -136,8 +136,8 @@ async def helpback(event):
                 Button.inline("💖 𝚌𝚘𝚖𝚖𝚊𝚗𝚍𝚂 💖", data="extra")
               ],
               [
-                Button.url("💘 ⏤͟͟͢͞͞🇩𝗙𝗦⚔️「𝙈𝙊𝙊𝙉」 💘", "https://t.me/moon_m_6"),
-                Button.url("💫 𝚂𝚞𝚙𝚙𝚘𝚛𝚃 💫", "https://t.me/+PfRardqZ41U1MTg1")
+                Button.url("🥀𝐂𝐎𝐃𝐄𝐑🥀", "https://t.me/moon_m_6"),
+                Button.url("🌷♨️𝐒𝐔𝐏𝐏𝐎𝐑𝐓♨️🌷", "https://t.me/+PfRardqZ41U1MTg1")
               ]
             ]
           )
