@@ -21,22 +21,10 @@ from datetime import datetime
 async def ping(e):
     if e.sender_id in SUDO_USERS:
         start = datetime.now()
-        altron = await e.reply(f"» __🫧 🇲𝐎𝐎𝐍 𝐢𝐬 𝐫𝐞𝐚𝐝𝐲 𝐭𝐨 𝐛𝐫𝐢𝐧𝐠 𝐂𝐲𝐜𝐥𝐨𝐧𝐞⚡️⛈
-
-🫧𝐄𝐧𝐞𝐦𝐢𝐞𝐬, 𝐠𝐞𝐭 𝐫𝐞𝐚𝐝𝐲 𝐭𝐨 𝐠𝐞𝐭 𝐟𝐮𝐜𝐤𝐞𝐝 𝐢𝐧 𝐭𝐡𝐞 𝐜𝐲𝐜𝐥𝐨𝐧𝐞.⚡️⛈
-
-🫧#𝐌𝐎𝐎𝐍 𝐎𝐩⚡️⛈
-
-🫧#𝐉𝐚𝐲 𝐇𝐢𝐧𝐝 𝐉𝐚𝐲 𝐁𝐡𝐚𝐫𝐚𝐭⚡️⛈__")
+        altron = await e.reply(f"» __🫧 🇲𝐎𝐎𝐍 𝐢𝐬 𝐫𝐞𝐚𝐝𝐲 𝐭𝐨 𝐛𝐫𝐢𝐧𝐠 𝐂𝐲𝐜𝐥𝐨𝐧𝐞⚡️⛈__")
         end = datetime.now()
         mp = (end - start).microseconds / 1000
-        await altron.edit(f"🫧 🇲𝐎𝐎𝐍 𝐢𝐬 𝐫𝐞𝐚𝐝𝐲 𝐭𝐨 𝐛𝐫𝐢𝐧𝐠 𝐂𝐲𝐜𝐥𝐨𝐧𝐞⚡️⛈
-
-🫧𝐄𝐧𝐞𝐦𝐢𝐞𝐬, 𝐠𝐞𝐭 𝐫𝐞𝐚𝐝𝐲 𝐭𝐨 𝐠𝐞𝐭 𝐟𝐮𝐜𝐤𝐞𝐝 𝐢𝐧 𝐭𝐡𝐞 𝐜𝐲𝐜𝐥𝐨𝐧𝐞.⚡️⛈
-
-🫧#𝐌𝐎𝐎𝐍 𝐎𝐩⚡️⛈
-
-🫧#𝐉𝐚𝐲 𝐇𝐢𝐧𝐝 𝐉𝐚𝐲 𝐁𝐡𝐚𝐫𝐚𝐭⚡️⛈\n» `{mp} 𝙼𝚂`")
+        await altron.edit(f"🫧 🇲𝐎𝐎𝐍 𝐢𝐬 𝐫𝐞𝐚𝐝𝐲 𝐭𝐨 𝐛𝐫𝐢𝐧𝐠 𝐂𝐲𝐜𝐥𝐨𝐧𝐞⚡️⛈\n» `{mp} 𝙼𝚂`")
 
 
 @X1.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
@@ -51,7 +39,7 @@ async def ping(e):
 @X10.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
 async def restart(e):
     if e.sender_id in SUDO_USERS:
-        await e.reply(f"`🥀𝚁𝙴𝚂𝚃𝙰𝚁𝚃𝙸𝙽𝙶 𝐌𝐎𝐎𝐍 𝙱𝙾𝚃𝚂🥀...`")
+        await e.reply(f"`🥀𝚁𝙴𝚂𝚃𝙰𝚁𝚃𝙸𝙽𝙶 MOON 𝙱𝙾𝚃𝚂🥀...`")
         try:
             await X1.disconnect()
         except Exception:
@@ -111,15 +99,7 @@ async def addsudo(event):
         Heroku = heroku3.from_key(HEROKU_API_KEY)
         sudousers = getenv("SUDO_USERS", default=None)
 
-        ok = await event.reply(f"» __🫧𝐘𝐨𝐮 𝐆𝐨𝐭 𝐒𝐮𝐝𝐨 𝐎𝐟 𝐓𝐡𝐞 𝐁𝐨𝐭⚡️⛈
-
-🫧𝐆𝐞𝐭 𝐫𝐞𝐚𝐝𝐲 𝐭𝐨 𝐛𝐫𝐢𝐧𝐠 𝐂𝐲𝐜𝐥𝐨𝐧𝐞⚡️⛈
-
-🫧𝐄𝐧𝐞𝐦𝐢𝐞𝐬, 𝐠𝐞𝐭 𝐫𝐞𝐚𝐝𝐲 𝐭𝐨 𝐠𝐞𝐭 𝐟𝐮𝐜𝐤𝐞𝐝 𝐢𝐧 𝐭𝐡𝐞 𝐜𝐲𝐜𝐥𝐨𝐧𝐞.⚡️⛈
-
-🫧#𝐌𝐎𝐎𝐍 𝐎𝐩⚡️⛈
-
-🫧#𝐉𝐚𝐲 𝐇𝐢𝐧𝐝 𝐉𝐚𝐲 𝐁𝐡𝐚𝐫𝐚𝐭⚡️⛈...__🚀🚀")
+        ok = await event.reply(f"» __🫧𝐘𝐨𝐮 𝐆𝐨𝐭 𝐒𝐮𝐝𝐨 𝐎𝐟 𝐓𝐡𝐞 𝐁𝐨𝐭⚡️⛈...__🚀🚀")
         target = ""
         if HEROKU_APP_NAME is not None:
             app = Heroku.app(HEROKU_APP_NAME)
@@ -137,21 +117,13 @@ async def addsudo(event):
             return
 
         if str(target) in sudousers:
-            await ok.edit("» 🫧𝐘𝐨𝐮 𝐡𝐚𝐯𝐞 𝐒𝐮𝐝𝐨 𝐎𝐟 𝐓𝐡𝐞 𝐁𝐨𝐭⚡️⛈
-
-🫧𝐆𝐞𝐭 𝐫𝐞𝐚𝐝𝐲 𝐭𝐨 𝐛𝐫𝐢𝐧𝐠 𝐂𝐲𝐜𝐥𝐨𝐧𝐞⚡️⛈
-
-🫧𝐄𝐧𝐞𝐦𝐢𝐞𝐬, 𝐠𝐞𝐭 𝐫𝐞𝐚𝐝𝐲 𝐭𝐨 𝐠𝐞𝐭 𝐟𝐮𝐜𝐤𝐞𝐝 𝐢𝐧 𝐭𝐡𝐞 𝐜𝐲𝐜𝐥𝐨𝐧𝐞.⚡️⛈
-
-🫧#𝐌𝐎𝐎𝐍 𝐎𝐩⚡️⛈
-
-🫧#𝐉𝐚𝐲 𝐇𝐢𝐧𝐝 𝐉𝐚𝐲 𝐁𝐡𝐚𝐫𝐚𝐭⚡️⛈ !!")
+            await ok.edit("» 🫧𝐘𝐨𝐮 𝐡𝐚𝐯𝐞 𝐒𝐮𝐝𝐨 𝐎𝐟 𝐓𝐡𝐞 𝐁𝐨𝐭⚡️⛈ !!")
         else:
             if len(sudousers) > 0:
                 newsudo = f"{sudousers} {target}"
             else:
                 newsudo = f"{target}"
-            await ok.edit(f"» **𝙽𝙴𝚆 𝚂𝚄𝙳𝙾 𝚄𝚂𝙴𝚁**: `{target}`\n» 💖𝚁𝙴𝚂𝚃𝙰𝚁𝚃𝙸𝙽𝙶 𝐌𝐎𝐎𝐍 𝙱𝙾𝚃𝚂💖...`")
+            await ok.edit(f"» **𝙽𝙴𝚆 𝚂𝚄𝙳𝙾 𝚄𝚂𝙴𝚁**: `{target}`\n» 💖𝚁𝙴𝚂𝚃𝙰𝚁𝚃𝙸𝙽𝙶 MOON 𝙱𝙾𝚃𝚂💖...`")
             heroku_var["SUDO_USERS"] = newsudo    
     
     elif event.sender_id in SUDO_USERS:
