@@ -5,11 +5,11 @@ from config import X1, X2, X3, X4, X5, X6, X7, X8, X9, X10
 
 START_BUTTON = [
     [
-        Button.inline("🌷♨️𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒🌷♨️", data="help_back")
+        Button.inline("♨️⚡️𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒⚡️♨️", data="help_back")
     ],
     [
-        Button.url("🌷♨️𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑♨️🌷", "https://t.me/moon_m_6"),
-        Button.url("🌷♨️𝐒𝐔𝐏𝐏𝐎𝐑𝐓♨️🌷", "https://t.me/+PfRardqZ41U1MTg1")
+        Button.url("♨️⚡️𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑⚡️♨️", "https://t.me/moon_m_6"),
+        Button.url("♨️⚡️𝐒𝐔𝐏𝐏𝐎𝐑𝐓⚡️♨️", "https://t.me/+PfRardqZ41U1MTg1")
     ],
     [
         Button.url("🥀𝐂𝐎𝐃𝐄𝐑🥀", "https://t.me/moon_m_6")
