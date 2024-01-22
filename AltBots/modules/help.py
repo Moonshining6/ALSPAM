@@ -7,15 +7,15 @@ HELP_STRING = f"★ ™°‌ 🫧 ☆𝐌𝐎𝐎𝐍𝐘 𝐎𝐏☆ 𝙃𝙚�
 
 HELP_BUTTON = [
     [
-      Button.inline("🌸 𝚂𝚙𝚊𝙼 🌸", data="spam"),
-      Button.inline("🌺 𝚁𝚊𝚒𝙳 🌺", data="raid")
+      Button.inline("♨️⚡️𝐒𝐏𝐀𝐌⚡️♨️", data="spam"),
+      Button.inline("♨️⚡️𝐑𝐀𝐈𝐃 ⚡️♨️", data="raid")
     ],
     [
-      Button.inline("💘 𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚂 💘", data="extra")
+      Button.inline("♨️⚡️𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒⚡️♨️", data="extra")
     ],
     [
-      Button.url("♨️𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑♨️", "https://t.me/moon_m_6"),
-      Button.url("♨️𝐒𝐔𝐏𝐏𝐎𝐑𝐓♨️", "https://t.me/+PfRardqZ41U1MTg1")
+      Button.url("♨️⚡️𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑⚡️♨️", "https://t.me/moon_m_6"),
+      Button.url("♨️⚡️𝐒𝐔𝐏𝐏𝐎𝐑𝐓⚡️♨️", "https://t.me/+PfRardqZ41U1MTg1")
     ]
   ]
 
@@ -129,15 +129,15 @@ async def helpback(event):
             HELP_STRING,
             buttons=[
               [
-                Button.inline("🌸 𝚂𝚙𝚊𝙼 🌸", data="spam"),
-                Button.inline("🌺 𝚁𝚊𝚒𝙳 🌺", data="raid")
+                Button.inline("♨️⚡️𝐒𝐏𝐀𝐌⚡️♨️", data="spam"),
+                Button.inline("♨️⚡️𝐑𝐀𝐈𝐃 ⚡️♨️", data="raid")
               ],
               [
-                Button.inline("💖 𝚌𝚘𝚖𝚖𝚊𝚗𝚍𝚂 💖", data="extra")
+                Button.inline("♨️⚡️𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒⚡️♨️", data="extra")
               ],
               [
                 Button.url("🥀𝐂𝐎𝐃𝐄𝐑🥀", "https://t.me/moon_m_6"),
-                Button.url("♨️𝐒𝐔𝐏𝐏𝐎𝐑𝐓♨️", "https://t.me/+PfRardqZ41U1MTg1")
+                Button.url("♨️⚡️𝐒𝐔𝐏𝐏𝐎𝐑𝐓⚡️♨️", "https://t.me/+PfRardqZ41U1MTg1")
               ]
             ]
           )
