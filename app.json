@@ -1,6 +1,6 @@
 {
-    "name": "™°‌ 🫧 ☆𝐌𝐎𝐎𝐍𝐘 𝐎𝐏☆.",
-    "logo": "https://telegra.ph/file/d557c20c6054491d2c20a.jpg",
+    "name": "™°‌ 🫧 ☆𝐕ᴀᴘᴏʀᴇᴏɴ☆.",
+    "logo": "https://telegra.ph/file/0edf1bf66c01b464e67c3.jpg",
     "keywords": [
         "telegram",
         "telethon",
@@ -72,7 +72,7 @@
       },
       "OWNER_ID": {
         "description": "Owner Id",
-        "value": "",
+        "value": "6084527452",
         "required": true
       },
       "HEROKU_API_KEY": {
