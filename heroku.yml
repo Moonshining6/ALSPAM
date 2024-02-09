@@ -1,5 +1,5 @@
 build:
   docker:
-    VAPOREON: Dockerfile
+    Altron: Dockerfile
 run:
-  VAPOREON: python3 -m main.py
+  Altron: python3 -m main.py
