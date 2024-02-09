@@ -21,10 +21,10 @@ from datetime import datetime
 async def ping(e):
     if e.sender_id in SUDO_USERS:
         start = datetime.now()
-        altron = await e.reply(f"» __🫧 🇲𝐎𝐎𝐍 𝐢𝐬 𝐫𝐞𝐚𝐝𝐲 𝐭𝐨 𝐛𝐫𝐢𝐧𝐠 𝐂𝐲𝐜𝐥𝐨𝐧𝐞⚡️⛈__")
+        vaporeon = await e.reply(f"» __🫧 🇲𝐎𝐎𝐍 𝐈ꜱ 𝐑ᴇᴀᴅʏ 𝐓ᴏ 𝐁ʀɪɴɢ 𝐂ʏᴄʟᴏɴᴇ⚡️⛈🌪__")
         end = datetime.now()
         mp = (end - start).microseconds / 1000
-        await altron.edit(f"🫧 🇲𝐎𝐎𝐍 𝐢𝐬 𝐫𝐞𝐚𝐝𝐲 𝐭𝐨 𝐛𝐫𝐢𝐧𝐠 𝐂𝐲𝐜𝐥𝐨𝐧𝐞⚡️⛈\n» `{mp} 𝙼𝚂`")
+        await vaporeon.edit(f"🫧 🇲𝐎𝐎𝐍 𝐈ꜱ 𝐑ᴇᴀᴅʏ 𝐓ᴏ 𝐁ʀɪɴɢ 𝐂ʏᴄʟᴏɴᴇ⚡️⛈🌪\n» `{mp} 𝙼𝚂`")
 
 
 @X1.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
@@ -39,7 +39,7 @@ async def ping(e):
 @X10.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
 async def restart(e):
     if e.sender_id in SUDO_USERS:
-        await e.reply(f"`🥀𝚁𝙴𝚂𝚃𝙰𝚁𝚃𝙸𝙽𝙶 MOON 𝙱𝙾𝚃𝚂🥀...`")
+        await e.reply(f"`🥀★𝐑ᴇꜱᴛᴀʀᴛɪɴɢ 𝐌ᴏᴏɴ 𝐁ᴏᴛꜱ★🥀...`")
         try:
             await X1.disconnect()
         except Exception:
@@ -113,18 +113,18 @@ async def addsudo(event):
             reply_msg = await event.get_reply_message()
             target = reply_msg.sender_id
         except:
-            await ok.edit("» 🌺𝚁𝙴𝙿𝙻𝚈 𝚃𝙾 𝙰 𝚄𝚂𝙴𝚁🌺 !!")
+            await ok.edit("» ⛈★𝐑ᴇᴘʟʏ  𝐓ᴏ 𝐀 𝐔ꜱᴇʀ★⛈ !!")
             return
 
         if str(target) in sudousers:
-            await ok.edit("» 🫧𝐘𝐨𝐮 𝐡𝐚𝐯𝐞 𝐒𝐮𝐝𝐨 𝐎𝐟 𝐓𝐡𝐞 𝐁𝐨𝐭⚡️⛈ !!")
+            await ok.edit("» 🫧★𝐘ᴏᴜ 𝐇ᴀᴠᴇ 𝐒ᴜᴅᴏ 𝐎ꜰ 𝐓ʜᴇ 𝐁ᴏᴛ★⚡️⛈ !!")
         else:
             if len(sudousers) > 0:
                 newsudo = f"{sudousers} {target}"
             else:
                 newsudo = f"{target}"
-            await ok.edit(f"» **𝙽𝙴𝚆 𝚂𝚄𝙳𝙾 𝚄𝚂𝙴𝚁**: `{target}`\n» 💖𝚁𝙴𝚂𝚃𝙰𝚁𝚃𝙸𝙽𝙶 MOON 𝙱𝙾𝚃𝚂💖...`")
+            await ok.edit(f"» **𝙽𝙴𝚆 𝚂𝚄𝙳𝙾 𝚄𝚂𝙴𝚁**: `{target}`\n» 🥀★𝐑ᴇꜱᴛᴀʀᴛɪɴɢ 𝐌ᴏᴏɴ 𝐁ᴏᴛꜱ★🥀...`")
             heroku_var["SUDO_USERS"] = newsudo    
     
     elif event.sender_id in SUDO_USERS:
-        await event.reply("» 𝚂𝙾𝚁𝚁𝚈, 𝙾𝙽𝙻𝚈 𝙾𝚆𝙽𝙴𝚁 𝙲𝙰𝙽 𝙰𝙲𝙴𝚂𝚂 𝚃𝙷𝙸𝚂 𝙲𝙾𝙼𝙼𝙰𝙽𝙳.")
+        await event.reply("» 𝐒𝐎𝐑𝐑𝐘 𝐎𝐍𝐋𝐘 𝐌𝐎𝐎𝐍 𝐂𝐀𝐍 𝐀𝐂𝐂𝐄𝐒𝐒 𝐓𝐇𝐈𝐒 𝐂𝐎𝐌𝐌𝐀𝐍𝐃 .")
