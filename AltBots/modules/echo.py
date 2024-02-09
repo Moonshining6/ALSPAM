@@ -27,11 +27,11 @@ async def echo(event):
             user_id = reply_msg.sender_id
 
             if user_id in VAPOREON:
-                await event.reply("⛈𝐍𝐎 , 𝐓𝐇𝐈𝐒 𝐆𝐔𝐘 𝐈𝐒 𝐓𝐇𝐄 𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑 𝐎𝐅 𝐓𝐇𝐄 𝐁𝐎𝐓𝐒 ⛈.")
+                await event.reply("💘𝐍𝐎 , 𝐓𝐇𝐈𝐒 𝐆𝐔𝐘 𝐈𝐒 𝐓𝐇𝐄 𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑 𝐎𝐅 𝐓𝐇𝐄 𝐁𝐎𝐓𝐒 💘.")
             elif user_id == OWNER_ID:
-                await event.reply("⛈𝐍𝐎 , 𝐓𝐇𝐈𝐒 𝐆𝐔𝐘 𝐈𝐒 𝐓𝐇𝐄 𝐎𝐖𝐍𝐄𝐑 𝐎𝐅 𝐓𝐇𝐄 𝐁𝐎𝐓𝐒⛈ .")
+                await event.reply("💘𝐍𝐎 , 𝐓𝐇𝐈𝐒 𝐆𝐔𝐘 𝐈𝐒 𝐓𝐇𝐄 𝐎𝐖𝐍𝐄𝐑 𝐎𝐅 𝐓𝐇𝐄 𝐁𝐎𝐓𝐒💘 .")
             elif user_id in SUDO_USERS:
-                await event.reply("⛈𝐍𝐎 , 𝐓𝐇𝐈𝐒 𝐆𝐔𝐘 𝐈𝐒 𝐒𝐔𝐃𝐎 𝐔𝐒𝐄𝐑 𝐎𝐅 𝐓𝐇𝐄 𝐁𝐎𝐓⛈.")
+                await event.reply("💘𝐍𝐎 , 𝐓𝐇𝐈𝐒 𝐆𝐔𝐘 𝐈𝐒 𝐒𝐔𝐃𝐎 𝐔𝐒𝐄𝐑 𝐎𝐅 𝐓𝐇𝐄 𝐁𝐎𝐓💘.")
             else:
                 try:
                     alt = Get(base64.b64decode('QFRoZUFsdHJvbg=='))
