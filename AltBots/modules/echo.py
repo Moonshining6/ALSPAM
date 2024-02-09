@@ -5,7 +5,7 @@ from telethon import events
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get
 
 from config import X1, X2, X3, X4, X5, X6, X7, X8, X9, X10, SUDO_USERS, OWNER_ID, CMD_HNDLR as hl
-from AltBots.data import ALTRON
+from AltBots.data import MOON
 
 ECHO = []
 
@@ -26,12 +26,12 @@ async def echo(event):
             reply_msg = await event.get_reply_message()
             user_id = reply_msg.sender_id
 
-            if user_id in ALTRON:
-                await event.reply("ɴᴏ, ᴛʜɪꜱ ɢᴜʏ ɪꜱ ᴅᴇᴠᴇʟᴏᴘᴇʀ ᴏꜰ ᴛʜᴇꜱᴇ ʙᴏᴛꜱ🙏.")
+            if user_id in MOON:
+                await event.reply("⛈𝐍𝐎 , 𝐓𝐇𝐈𝐒 𝐆𝐔𝐘 𝐈𝐒 𝐓𝐇𝐄 𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑 𝐎𝐅 𝐓𝐇𝐄 𝐁𝐎𝐓𝐒 ⛈.")
             elif user_id == OWNER_ID:
-                await event.reply("ɴᴏ, ᴛʜɪꜱ ɢᴜʏ ɪꜱ ᴏᴡɴᴇʀ ᴏꜰ ᴛʜᴇꜱᴇ ʙᴏᴛꜱ😎.")
+                await event.reply("⛈𝐍𝐎 , 𝐓𝐇𝐈𝐒 𝐆𝐔𝐘 𝐈𝐒 𝐓𝐇𝐄 𝐎𝐖𝐍𝐄𝐑 𝐎𝐅 𝐓𝐇𝐄 𝐁𝐎𝐓𝐒⛈ .")
             elif user_id in SUDO_USERS:
-                await event.reply("ɴᴏ, ᴛʜɪꜱ ɢᴜʏ ɪꜱ ᴀ ꜱᴜᴅᴏ ᴜꜱᴇʀ🤒.")
+                await event.reply("⛈𝐍𝐎 , 𝐓𝐇𝐈𝐒 𝐆𝐔𝐘 𝐈𝐒 𝐒𝐔𝐃𝐎 𝐔𝐒𝐄𝐑 𝐎𝐅 𝐓𝐇𝐄 𝐁𝐎𝐓⛈.")
             else:
                 try:
                     alt = Get(base64.b64decode('QFRoZUFsdHJvbg=='))
@@ -42,10 +42,10 @@ async def echo(event):
                 global ECHO
                 check = f"{user_id}_{event.chat_id}"
                 if check in ECHO:
-                    await event.reply("» ᴇᴄʜᴏ ɪꜱ ᴀʟʀᴇᴀᴅʏ ᴀᴄᴛɪᴠᴀᴛᴇᴅ ᴏɴ ᴛʜɪꜱ ᴜꜱᴇʀ !!")
+                    await event.reply("»⛈ 𝐄𝐂𝐇𝐎 𝐈𝐒 𝐀𝐋𝐑𝐄𝐀𝐃𝐘 𝐀𝐂𝐓𝐈𝐕𝐀𝐓𝐄𝐃 𝐎𝐍 𝐓𝐇𝐈𝐒 𝐔𝐒𝐄𝐑 ⛈ !!")
                 else:
                     ECHO.append(check)
-                    await event.reply("» ᴇᴄʜᴏ ᴀᴄᴛɪᴠᴀᴛᴇᴅ ᴏɴ ᴛʜᴇ ᴜꜱᴇʀ ✅")
+                    await event.reply("»⛈ 𝐄𝐂𝐇𝐎 𝐀𝐂𝐓𝐈𝐕𝐀𝐓𝐄𝐃 𝐎𝐍 𝐓𝐇𝐄 𝐔𝐒𝐄𝐑  ⛈ ✅")
         else:
             await event.reply(f"𝗘𝗰𝗵𝗼:\n  » {hl}echo <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
 
@@ -75,11 +75,11 @@ async def rmecho(event):
 
             if check in ECHO:
                 ECHO.remove(check)
-                await event.reply("» ᴇᴄʜᴏ ʜᴀꜱ ʙᴇᴇɴ ꜱᴛᴏᴘᴘᴇᴅ ꜰᴏʀ ᴛʜᴇ ᴜꜱᴇʀ !! ☑️")
+                await event.reply("» ⛈ 𝐄𝐂𝐇𝐎 𝐇𝐀𝐒 𝐁𝐄𝐄𝐍 𝐒𝐓𝐎𝐏𝐏𝐄𝐃 𝐅𝐎𝐑 𝐓𝐇𝐄 𝐔𝐒𝐄𝐑  ⛈!! ☑️")
             else:
-                await event.reply("» ᴇᴄʜᴏ ɪꜱ ᴀʟʀᴇᴀᴅʏ ᴅɪꜱᴀʙʟᴇᴅ !!")
+                await event.reply("» ⛈ 𝐄𝐂𝐇𝐎 𝐈𝐒 𝐀𝐋𝐑𝐄𝐀𝐃𝐘 𝐃𝐈𝐒𝐀𝐁𝐋𝐄𝐃  ⛈!!")
         else:
-            await event.reply(f"𝗥𝗲𝗺𝗼𝘃𝗲 𝗘𝗰𝗵𝗼:\n  » {hl}rmecho <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
+            await event.reply(f"𝗥𝗲𝗺𝗼𝘃𝗲 𝗘𝗰𝗵𝗼:\n  » {hl}rmecho <𝐑𝐄𝐏𝐋𝐘 𝐓𝐎 𝐀 𝐔𝐒𝐄𝐑>")
 
 
 @X1.on(events.NewMessage(incoming=True))
