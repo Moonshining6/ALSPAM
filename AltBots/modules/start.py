@@ -5,14 +5,14 @@ from config import X1, X2, X3, X4, X5, X6, X7, X8, X9, X10
 
 START_BUTTON = [
     [
-        Button.inline("♨️⚡️𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒⚡️♨️", data="help_back")
+        Button.inline("⛈◄⏤ 𝐂ᴏᴍᴍᴀɴᴅꜱ ◄⏤⛈", data="help_back")
     ],
     [
-        Button.url("♨️⚡️𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑⚡️♨️", "https://t.me/moon_m_6"),
-        Button.url("♨️⚡️𝐒𝐔𝐏𝐏𝐎𝐑𝐓⚡️♨️", "https://t.me/+PfRardqZ41U1MTg1")
+        Button.url("⛈◄⏤ 𝐃ᴇᴠᴇʟᴏᴘᴇʀ ◄⏤⛈", "https://t.me/queen_huu"),
+        Button.url("⛈◄⏤ 𝐆ᴀʟᴀxʏ ◄⏤⛈", "https://t.me/MILKYYYYY_WAYYY")
     ],
     [
-        Button.url("🥀𝐂𝐎𝐃𝐄𝐑🥀", "https://t.me/moon_m_6")
+        Button.url("⛈◄⏤ 𝐇ᴇʟʟ 𝐐ᴜᴇᴇɴ ◄⏤⛈", "https://t.me/queen_huu")
 
         
     ]
@@ -36,13 +36,13 @@ async def start(event):
         bot_name = AltBot.first_name
         bot_id = AltBot.id
         TEXT = f"**ʜᴇʏ​ [{event.sender.first_name}](tg://user?id={event.sender.id}),\n\nɪ ᴀᴍ [{bot_name}](tg://user?id={bot_id})​**\n━━━━━━━━━━━━━━━━━━━\n\n"
-        TEXT += f"» **𝐌𝐘 𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑 : 🥀⚡️𝐌𝐎𝐎𝐍⚡️🥀**\n\n"
+        TEXT += f"» **𝐌𝐘 𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑 : ⛈𝐌𝐎𝐎𝐍⛈[https://t.me/MOON_M_6]**\n\n"
         TEXT += f"» **𝐁𝐎𝐓𝐒 𝐕𝐄𝐑𝐒𝐈𝐎𝐍 :** `M3.3`\n"
         TEXT += f"» **𝐏𝐘𝐓𝐇𝐎𝐍 𝐕𝐄𝐑𝐒𝐈𝐎𝐍 :** `3.11.3`\n"
         TEXT += f"» **𝐌𝐎𝐎𝐍 𝐕𝐄𝐑𝐒𝐈𝐎𝐍 :** `{__version__}`\n━━━━━━━━━━━━━━━━━"
         await event.client.send_file(
                     event.chat_id,
-                    "https://telegra.ph/file/d557c20c6054491d2c20a.jpg",
+                    "https://telegra.ph/file/0edf1bf66c01b464e67c3.jpg",
                     caption=TEXT, 
                     buttons=START_BUTTON
                 )
