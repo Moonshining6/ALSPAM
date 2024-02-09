@@ -5,7 +5,7 @@ from random import choice
 from telethon import events
 
 from config import X1, X2, X3, X4, X5, X6, X7, X8, X9, X10, SUDO_USERS, OWNER_ID, CMD_HNDLR as hl
-from AltBots.data import RAID, REPLYRAID, ALTRON, MRAID, SRAID, CRAID, ALTRON
+from AltBots.data import RAID, REPLYRAID, VAPOREON, MRAID, SRAID, CRAID, VAPOREON
 
 REPLY_RAID = []
 
@@ -34,7 +34,7 @@ async def raid(e):
             uid = entity.id
 
         try:
-            if uid in ALTRON:
+            if uid in VAPOREON:
                 await e.reply("💘𝐍𝐎 , 𝐓𝐇𝐈𝐒 𝐆𝐔𝐘 𝐈𝐒 𝐓𝐇𝐄 𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑 𝐎𝐅 𝐓𝐇𝐄 𝐁𝐎𝐓𝐒 💘 ")
             elif uid == OWNER_ID:
                 await e.reply("💘𝐍𝐎 , 𝐓𝐇𝐈𝐒 𝐆𝐔𝐘 𝐈𝐒 𝐓𝐇𝐄 𝐎𝐖𝐍𝐄𝐑 𝐎𝐅 𝐓𝐇𝐄 𝐁𝐎𝐓𝐒💘")
@@ -99,7 +99,7 @@ async def rraid(e):
 
         try:
             user_id = entity.id
-            if user_id in ALTRON:
+            if user_id in VAPOREON:
                 await e.reply("💘𝐍𝐎 , 𝐓𝐇𝐈𝐒 𝐆𝐔𝐘 𝐈𝐒 𝐓𝐇𝐄 𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑 𝐎𝐅 𝐓𝐇𝐄 𝐁𝐎𝐓𝐒 💘")
             elif user_id == OWNER_ID:
                 await e.reply("💘𝐍𝐎 , 𝐓𝐇𝐈𝐒 𝐆𝐔𝐘 𝐈𝐒 𝐓𝐇𝐄 𝐎𝐖𝐍𝐄𝐑 𝐎𝐅 𝐓𝐇𝐄 𝐁𝐎𝐓𝐒💘")
@@ -245,7 +245,7 @@ async def craid(e):
             uid = entity.id
 
         try:
-            if uid in ALTRON:
+            if uid in VAPOREON:
                 await e.reply("💘𝐍𝐎 , 𝐓𝐇𝐈𝐒 𝐆𝐔𝐘 𝐈𝐒 𝐓𝐇𝐄 𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑 𝐎𝐅 𝐓𝐇𝐄 𝐁𝐎𝐓𝐒 💘")
             elif uid == OWNER_ID:
                 await e.reply("💘𝐍𝐎 , 𝐓𝐇𝐈𝐒 𝐆𝐔𝐘 𝐈𝐒 𝐓𝐇𝐄 𝐎𝐖𝐍𝐄𝐑 𝐎𝐅 𝐓𝐇𝐄 𝐁𝐎𝐓𝐒💘")
