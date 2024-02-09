@@ -3,7 +3,7 @@ from telethon import events, Button
 from config import X1, X2, X3, X4, X5, X6, X7, X8, X9, X10, SUDO_USERS, CMD_HNDLR as hl
 
 
-HELP_STRING = f"★ ™°‌ 🫧 ☆𝐕ᴀᴘᴏʀᴇᴏɴ☆ 𝙃𝙚𝙡𝙥 𝙈𝙚𝙣𝙪 ★\n\n» **𝙲𝙻𝙸𝙲𝙺 𝙾𝙽 𝙱𝙴𝙻𝙾𝚆 𝙱𝚄𝚃𝚃𝙾𝙽 𝙵𝙾𝚁 𝙷𝙴𝙻𝙿**\n» **𝐃ᴇᴠᴇʟᴏᴘᴇʀ: @queen_huu**"
+HELP_STRING = f"★ ™°‌ 🫧 ☆𝐕ᴀᴘᴏʀᴇᴏɴ☆ 𝙃𝙚𝙡𝙥 𝙈𝙚𝙣𝙪 ★\n\n» **𝐂𝐋𝐈𝐂𝐊 𝐎𝐍 𝐁𝐔𝐓𝐓𝐎𝐍 𝐅𝐎𝐑 𝐇𝐄𝐋𝐏**\n» **𝐃ᴇᴠᴇʟᴏᴘᴇʀ: @queen_huu**"
 
 HELP_BUTTON = [
     [
