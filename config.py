@@ -3,7 +3,7 @@ import logging
 from telethon import TelegramClient
 
 from os import getenv
-from AltBots.data import vaporeon
+from AltBots.data import VAPOREON
 
 
 logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s', level=logging.WARNING)
@@ -30,7 +30,7 @@ BOT_TOKEN10 = getenv("BOT_TOKEN10", default=None)
 SUDO_USERS = list(map(lambda x: int(x), getenv("SUDO_USERS", default="5518687442").split()))
 for x in vaporeon:
     SUDO_USERS.append(x)
-OWNER_ID = int(getenv("OWNER_ID", default="5059737154"))
+OWNER_ID = int(getenv("OWNER_ID", default="6084527452"))
 SUDO_USERS.append(OWNER_ID)
 
 
