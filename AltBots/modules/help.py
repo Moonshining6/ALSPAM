@@ -3,19 +3,19 @@ from telethon import events, Button
 from config import X1, X2, X3, X4, X5, X6, X7, X8, X9, X10, SUDO_USERS, CMD_HNDLR as hl
 
 
-HELP_STRING = f"★ ™°‌ 🫧 ☆𝐕ᴀᴘᴏʀᴇᴏɴ☆ 𝙃𝙚𝙡𝙥 𝙈𝙚𝙣𝙪 ★\n\n» **𝐂𝐋𝐈𝐂𝐊 𝐎𝐍 𝐁𝐔𝐓𝐓𝐎𝐍 𝐅𝐎𝐑 𝐇𝐄𝐋𝐏**\n» **𝐃ᴇᴠᴇʟᴏᴘᴇʀ: @queen_huu**"
+HELP_STRING = f"★ ™°‌ 🫧 ★𝗠𝗼𝗼𝗻★ 𝙃𝙚𝙡𝙥 𝙈𝙚𝙣𝙪 ★\n\n» **𝐂𝐋𝐈𝐂𝐊 𝐎𝐍 𝐁𝐔𝐓𝐓𝐎𝐍 𝐅𝐎𝐑 𝐇𝐄𝐋𝐏**\n» **𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥: @MOON_M_6**"
 
 HELP_BUTTON = [
     [
-      Button.inline("⛈◄⏤ 𝐒ᴘᴀᴍ ◄⏤⛈", data="spam"),
-      Button.inline("⛈◄⏤ 𝐑ᴀɪᴅ ◄⏤⛈", data="raid")
+      Button.inline("★𝗦𝗣𝗔𝗠★", data="spam"),
+      Button.inline("★𝗥𝗔𝗜𝗗★", data="raid")
     ],
     [
-      Button.inline("⛈◄⏤ 𝐂ᴏᴍᴍᴀɴᴅꜱ ◄⏤⛈", data="extra")
+      Button.inline("★𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦★", data="extra")
     ],
     [
-      Button.url("⛈◄⏤ 𝐃ᴇᴠᴇʟᴏᴘᴇʀ ◄⏤⛈", "https://t.me/queen_huu"),
-      Button.url("⛈◄⏤ 𝐆ᴀʟᴀxʏ ◄⏤⛈", "https://t.me/MILKYYYYY_WAYYY")
+      Button.url("★𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥★", "https://t.me/MOON_M_6"),
+      Button.url("★𝗦𝗨𝗣𝗣𝗢𝗥𝗧★", "https://t.me/+XpL0qhdF7TQzNDVl")
     ]
   ]
 
@@ -34,7 +34,7 @@ async def help(event):
     if event.sender_id in SUDO_USERS:
         try:
           await event.client.send_file(event.chat_id,
-              "https://telegra.ph/file/0edf1bf66c01b464e67c3.jpg",
+              "https://graph.org/file/06e8314b6a58d6fef0188.jpg",
               caption=HELP_STRING,
               buttons=HELP_BUTTON
               )
@@ -128,15 +128,15 @@ async def helpback(event):
             HELP_STRING,
             buttons=[
               [
-                Button.inline("⛈◄⏤ 𝐒ᴘᴀᴍ ◄⏤⛈", data="spam"),
-                Button.inline("⛈◄⏤ 𝐑ᴀɪᴅ ◄⏤⛈", data="raid")
+                Button.inline("★𝗦𝗣𝗔𝗠★", data="spam"),
+                Button.inline("★𝗥𝗔𝗜𝗗★", data="raid")
               ],
               [
-                Button.inline("⛈◄⏤ 𝐂ᴏᴍᴍᴀɴᴅꜱ ◄⏤⛈", data="extra")
+                Button.inline("★𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦★", data="extra")
               ],
               [
-                Button.url("⛈◄⏤ 𝐇ᴇʟʟ 𝐐ᴜᴇᴇɴ ◄⏤⛈", "https://t.me/queen_huu"),
-                Button.url("⛈◄⏤ 𝐆ᴀʟᴀxʏ ◄⏤⛈", "https://t.me/MILKYYYYY_WAYYY")
+                Button.url("★𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥★", "https://t.me/MOON_M_6"),
+                Button.url("★𝗦𝗨𝗣𝗣𝗢𝗥𝗧★", "https://t.me/+XpL0qhdF7TQzNDVl")
               ]
             ]
           )
